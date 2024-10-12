@@ -1,6 +1,6 @@
 const HomePage = () => {
 	return (
-		<>
+		<div className="">
 			<div className="flex flex-col items-center h-screen w-screen gradient-bg no-scrollbar">
 				{/* Navigation Bar */}
 				<nav className="navbar flex border-b justify-around items-center gap-80 w-max p-5 mt-1 ">
@@ -27,32 +27,26 @@ const HomePage = () => {
 				</nav>
 
 				{/* Header Section */}
-				<header className="header w-screen flex flex-grow flex-col border justify-center items-center gap-1">
-					<h1 className="text-6xl  text-white">Future Gadget Laboratory:</h1>
+				<header className="header w-screen flex flex-grow flex-col  justify-center items-center gap-1">
+					<h1 className="text-6xl font-bold underline text-white my-2">
+						Future Gadget Laboratory
+					</h1>
 					<h2 className="text-6xl  text-white">
 						Where Developers Turn Ideas into <br />
 						Reality
 					</h2>
-					<p>
+					<p className="text-white my-11 ">
 						Explore Our Team's Portfolios, Innovative Projects, and Upcoming
 						Blog Insights
 					</p>
-
-					{/* Circle Color Palette */}
-					<div className="color-palette">
-						<span className="circle red"></span>
-						<span className="circle green"></span>
-						<span className="circle purple"></span>
-						<span className="circle blue"></span>
-						<span className="circle magenta"></span>
-					</div>
 				</header>
 			</div>
 
-			<div className="h-72 w-full bg-black">
+			{/* Members Section */}
+			<div className="h-screen w-screen bg-gray-500">
 				<h1>Members</h1>
 			</div>
-		</>
+		</div>
 	);
 };
 
