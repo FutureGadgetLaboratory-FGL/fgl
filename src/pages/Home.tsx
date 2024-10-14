@@ -1,9 +1,11 @@
+import { memberCarousel } from '../components/memberCarousel.tsx';
+
 const HomePage = () => {
 	return (
-		<div className="">
+		<>
 			<div className="flex flex-col items-center h-screen w-screen gradient-bg no-scrollbar">
 				{/* Navigation Bar */}
-				<nav className="navbar flex border-b justify-around items-center gap-80 w-max p-5 mt-1 ">
+				<nav className="flex border-b justify-between items-center w-[70vw] py-5 mt-1 ">
 					<div className="flex items-center text-lg font-bold text-white">
 						FGL
 					</div>
@@ -39,14 +41,62 @@ const HomePage = () => {
 						Explore Our Team's Portfolios, Innovative Projects, and Upcoming
 						Blog Insights
 					</p>
+					<svg
+						width="489"
+						height="120"
+						viewBox="0 0 489 70 "
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle
+							className="animate-bounce delay-0"
+							cx="118"
+							cy="49"
+							r="49"
+							fill="#BD4D4D"
+						/>
+						<circle
+							className="animate-bounce delay-75"
+							cx="181"
+							cy="49"
+							r="49"
+							fill="#D9D9D9"
+						/>
+						<circle
+							className="animate-bounce delay-100"
+							cx="240"
+							cy="49"
+							r="49"
+							fill="#76A46F"
+						/>
+						<circle
+							className="animate-bounce delay-150"
+							cx="303"
+							cy="49"
+							r="49"
+							fill="#45398E"
+						/>
+						<circle
+							className="animate-bounce delay-200"
+							cx="370"
+							cy="49"
+							r="49"
+							fill="#A84072"
+						/>
+					</svg>
 				</header>
 			</div>
 
 			{/* Members Section */}
-			<div className="h-screen w-screen bg-gray-500">
-				<h1>Members</h1>
+			<div className="flex flex-col justify-center items-center h-screen w-screen ">
+				<div className="flex flex-col border w-[80%] h-[77%] items-start">
+					<h1 className="text-black text-5xl border">Members</h1>
+					<div className="border self-center flex justify-center items-center h-full">
+						{memberCarousel()}
+					</div>
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
