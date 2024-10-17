@@ -41,49 +41,55 @@ const HomePage = () => {
 						Explore Our Team's Portfolios, Innovative Projects, and Upcoming
 						Blog Insights
 					</p>
-					<svg
-						width="489"
-						height="120"
-						viewBox="0 0 489 70 "
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<circle
-							className="animate-bounce delay-0"
-							cx="118"
-							cy="49"
-							r="49"
-							fill="#BD4D4D"
+					<div className="flex gap-5">
+						<svg
+							width="489"
+							height="120"
+							viewBox="0 0 489 70 "
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								className="animate-bounce delay-0"
+								cx="118"
+								cy="49"
+								r="49"
+								fill="#BD4D4D"
+							/>
+							<circle
+								className="animate-bounce delay-75"
+								cx="181"
+								cy="49"
+								r="49"
+								fill="#D9D9D9"
+							/>
+							<circle
+								className="animate-bounce delay-100"
+								cx="240"
+								cy="49"
+								r="49"
+								fill="#76A46F"
+							/>
+							<circle
+								className="animate-bounce delay-150"
+								cx="303"
+								cy="49"
+								r="49"
+								fill="#45398E"
+							/>
+							<circle
+								className="animate-bounce delay-200"
+								cx="370"
+								cy="49"
+								r="49"
+								fill="#A84072"
+							/>
+						</svg>
+						<img
+							src="https://i.pinimg.com/originals/91/a0/c0/91a0c0c7daf2eb978b1a893c068d2bde.gif"
+							className="h-auto w-[150px] contain-content"
 						/>
-						<circle
-							className="animate-bounce delay-75"
-							cx="181"
-							cy="49"
-							r="49"
-							fill="#D9D9D9"
-						/>
-						<circle
-							className="animate-bounce delay-100"
-							cx="240"
-							cy="49"
-							r="49"
-							fill="#76A46F"
-						/>
-						<circle
-							className="animate-bounce delay-150"
-							cx="303"
-							cy="49"
-							r="49"
-							fill="#45398E"
-						/>
-						<circle
-							className="animate-bounce delay-200"
-							cx="370"
-							cy="49"
-							r="49"
-							fill="#A84072"
-						/>
-					</svg>
+					</div>
 				</header>
 			</div>
 
